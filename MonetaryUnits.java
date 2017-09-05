@@ -1,3 +1,5 @@
+//Simple program that prompts the user for a dollar amount and then returns the dollars and cents that make up that amount.
+
 package monetaryunits;
 
 import static java.lang.Math.round;
