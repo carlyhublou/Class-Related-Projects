@@ -30,7 +30,8 @@ public class ComputeAngles {
         double C = Math.toDegrees(Math.acos((-a * a - b * b + c * c) / (-2 * a * b)));
         
         //Print results
-        System.out.println("The angles are: " + Math.round(A * 100) / 100.0 + "\t" + Math.round(B * 100) / 100.0 + "\t" + Math.round(C * 100) / 100.0);
+        System.out.println("The angles are: " + Math.round(A * 100) / 100.0 + "\t" + 
+                           Math.round(B * 100) / 100.0 + "\t" + Math.round(C * 100) / 100.0);
     }
     
 }
