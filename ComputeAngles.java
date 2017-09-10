@@ -1,3 +1,5 @@
+//Computes the angles of a triangle given three points entered by the user.
+
 package computeangles;
 
 import java.util.*;
