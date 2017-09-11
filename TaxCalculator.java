@@ -1,3 +1,5 @@
+//Based on 2009 tax brackets.
+
 package taxcalculator;
 
 import java.util.Scanner;
