@@ -1,3 +1,6 @@
+//Prompts user to enter a two-digit number that does not start with zero and compares that number to a
+//randomly-generated lottery number to evaluate if the numbers match completely, in part, or not at all.
+
 package lottery;
 
 import static java.lang.Math.round;
