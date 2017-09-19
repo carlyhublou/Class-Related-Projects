@@ -25,11 +25,12 @@ public class Lottery {
         // Evaluate response against random number
         if (userResponse == lottery){
             System.out.println("Congratulations! You have won $10,000. The lottery number is "
-                    + lottery + " and your number is " + userResponse + ".");
-        } else if (userResponse1 == lottery1 && userResponse2 == lottery2){
+            + lottery + " and your number is " + userResponse + ".");
+        } else if (userResponse1 == lottery2 && userResponse2 == lottery1){
             System.out.println("Congratulations! You have won $3,000. The lottery number is "
             + lottery + " and your number is " + userResponse + ".");
-        } else if (userResponse1 == lottery1 || userResponse2 == lottery2){
+        } else if (userResponse1 == lottery1 || userResponse2 == lottery2 || userResponse1 == lottery2
+          || userResponse2 == lottery1){
             System.out.println("Congratulations! You have won $1,000. The lottery number is "
             + lottery + " and your number is " + userResponse + ".");
         } else {
