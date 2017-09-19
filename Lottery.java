@@ -12,14 +12,14 @@ public class Lottery {
     public static void main(String[] args) {
         // Generate random lottery numbers
         int lottery = 10 + (int)(Math.random() * 90);
-        int lottery1 = round(lottery/10);
+        int lottery1 = lottery/10;
         int lottery2 = lottery % 10;
                 
         // Prompt user for input
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a two-digit number that does not start with zero.");
         int userResponse = input.nextInt();
-        int userResponse1 = round(userResponse/10);
+        int userResponse1 = userResponse/10;
         int userResponse2 = userResponse % 10;
         
         // Evaluate response against random number
