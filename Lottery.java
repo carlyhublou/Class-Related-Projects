@@ -11,7 +11,7 @@ public class Lottery {
 
     public static void main(String[] args) {
         // Generate random lottery numbers
-        int lottery = (int)(System.currentTimeMillis() % 100);
+        int lottery = 10 + (int)(Math.random() * 90);
         int lottery1 = round(lottery/10);
         int lottery2 = lottery % 10;
                 
