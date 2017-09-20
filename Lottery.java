@@ -3,39 +3,33 @@
 
 package lottery;
 
-import static java.lang.Math.round;
-
 import java.util.Scanner;
 
 public class Lottery {
 
     public static void main(String[] args) {
         // Generate random lottery numbers
-        int lottery = 10 + (int)(Math.random() * 90);
+        int lottery = (int)(Math.random() * 100);        
         int lottery1 = lottery/10;
         int lottery2 = lottery % 10;
                 
         // Prompt user for input
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter a two-digit number that does not start with zero.");
+        System.out.println("Enter a two-digit number.");
         int userResponse = input.nextInt();
         int userResponse1 = userResponse/10;
         int userResponse2 = userResponse % 10;
         
         // Evaluate response against random number
         if (userResponse == lottery){
-            System.out.println("Congratulations! You have won $10,000. The lottery number is "
-            + lottery + " and your number is " + userResponse + ".");
+            System.out.println("Congratulations! Exact match. You have won $10,000.");
         } else if (userResponse1 == lottery2 && userResponse2 == lottery1){
-            System.out.println("Congratulations! You have won $3,000. The lottery number is "
-            + lottery + " and your number is " + userResponse + ".");
+            System.out.println("Congratulations! You matched the digits. You have won $3,000.");
         } else if (userResponse1 == lottery1 || userResponse2 == lottery2 || userResponse1 == lottery2
-          || userResponse2 == lottery1){
-            System.out.println("Congratulations! You have won $1,000. The lottery number is "
-            + lottery + " and your number is " + userResponse + ".");
+                || userResponse2 == lottery1){
+            System.out.println("Congratulations! You matched one digit You have won $1,000.");
         } else {
-            System.out.println("Sorry. You did not win. The lottery number is " + lottery
-            + " and your number is " + userResponse + ".");
+            System.out.println("Sorry. You did not win.");
         }
         
     }
