@@ -1,3 +1,7 @@
+//A perfect number is one that equals the sum of all of its factors. For example,
+//6 is a perfect number because 1 + 2 + 3 = 6. There are four perfect numbers
+//less than 10,000. Find them.
+
 package perfectnumber;
 
 public class PerfectNumber {
