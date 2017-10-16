@@ -1,2 +1,2 @@
 # ISM-6257-Projects
-Projects completed for ISM 6257, Intermediate Business Programming, taught in Java.
+Miscellaneous, unassigned projects completed on my own for ISM 6257, Intermediate Business Programming, taught in Java, Fall 2017.
